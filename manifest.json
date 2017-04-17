@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Password History",
+  "description": "This extension keeps track of entered passwords",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "assets/icon.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["scripts/event.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["scripts/scrape.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}
