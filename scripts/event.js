@@ -1,8 +1,11 @@
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
-    console.log(sender.tab ?
-                "from a content script:" + sender.tab.url :
-                "from the extension");
-    sendResponse({farewell: "goodbye"});
+    chrome.storage.local.set({'disable_nyancat': request.checked});
+    // sendResponse(request);
+    // sendResponse(request);
+    // if (request.event === 'checkbox') {
+    // } else if (request.event === 'store') {
+    //   console.log('storing');
+    // }
   }
 );
