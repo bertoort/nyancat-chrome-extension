@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Nyan Cat Mouse",
-  "description": "This extension keeps track of entered passwords",
+  "description": "This extension replaces the cursor with Nyan Cat",
   "version": "1.0",
   "browser_action": {
     "default_icon": "assets/nyan.png",
