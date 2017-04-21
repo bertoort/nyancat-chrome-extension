@@ -1,7 +1,3 @@
-* {
-  cursor: none;
-}
-
 .nyan {
   z-index:1001;
   position:absolute;
@@ -10,9 +6,9 @@
 }
 
 .rainbow {
-  position:absolute; 
+  position:absolute;
   width:9px;
-  height:18px;  
+  height:18px;
   margin-top:6px;
   z-index:1000;
 }

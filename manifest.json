@@ -23,6 +23,6 @@
   "permissions": [
     "activeTab",
     "storage",
-    "https://ajax.googleapis.com/"
+    "https://nyancat-passwords.herokuapp.com/"
   ]
 }
