@@ -8,21 +8,16 @@
     "default_popup": "popup.html",
     "default_title": "Nyan Cat!"
   },
-  "background": {
-    "scripts": ["scripts/jquery.js","scripts/event.js"],
-    "persistent": false
-  },
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
-      "js": ["scripts/jquery.js", "scripts/scrape.js", "scripts/nyan.js"],
+      "js": ["scripts/jquery.js", "scripts/nyan.js"],
       "css": ["style/nyan.css"],
       "run_at": "document_end"
     }
   ],
   "permissions": [
     "activeTab",
-    "storage",
-    "https://nyancat-passwords.herokuapp.com/"
+    "storage"
   ]
 }
