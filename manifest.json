@@ -9,7 +9,7 @@
     "default_title": "Nyan Cat!"
   },
   "background": {
-    "scripts": ["scripts/jquery.js","scripts/event.js"],
+    "scripts": ["scripts/jquery.js"],
     "persistent": false
   },
   "content_scripts": [
